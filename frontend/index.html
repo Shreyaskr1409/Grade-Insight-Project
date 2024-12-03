@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body class="flex flex-col justify-center items-center">
-    <div class="w-1/2 flex flex-col justify-center items-center">
-        <h1 class="text-[150px] font-bold underline text-center text-nowrap">Grade Insight</h1>
+    <div class="w-1/2 px-10 max-lg:w-full flex flex-col justify-center items-center">
+        <h1 class="text-[150px] max-xl:text-[120px] max-lg:text-[90px] max-sm:text-[60px] max-[430px]:text-[45px] font-bold underline text-center text-nowrap">Grade Insight</h1>
         <p class="text-xl text-center font-mono bg-zinc-200 px-1 rounded-md">get insights on which points to focus on in order to perform great in your exams...</p>
 
         <span class="w-2 h-12"></span>
@@ -29,10 +29,10 @@
 
         <span class="w-2 h-12"></span>
 
-        <h1 class="text-[50px] font-semibold text-center text-nowrap">Fill the form to get results</h1>
+        <h1 class="text-[50px] max-md:text-3xl font-semibold text-center">Fill the form to get results</h1>
 
         <form id="predictionForm" action="#" method="post">
-            <div class="mt-10 grid grid-cols-2 gap-x-3 gap-y-4">
+            <div class="mt-10 grid grid-cols-2 gap-x-3 gap-y-4 max-[500px]:flex max-[500px]:flex-col">
 
                 <div class="">
                     <label for="Hours_Studied" class="block text-sm/6 font-medium">Hours studied</label>
@@ -289,7 +289,7 @@
     </div>
     <div id="result" class="mt-4 p-4 w-full text-center"></div>
 
-    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 my-4 rounded-md max-w-xl mx-auto">
+    <div class="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mx-4 my-4 rounded-md max-w-xl mx-auto">
       <p class="text-sm">
         We apologize for any inaccuracies in our predictions. Our current model is based on a dataset that doesn't fully capture the higher values commonly observed, as we are still collecting detailed student data. Once our dataset is complete, we will update the model for improved accuracy, and this message will be removed. Thank you for your patience and understanding.
       </p>
@@ -299,11 +299,13 @@
     <footer class="w-full bg-zinc-700 text-white py-8">
       <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
         <!-- Logo or Brand Name -->
-        <div class="mb-4 md:mb-0">
+        <div class="">
           <h2 class="text-xl font-bold">Grade Insight</h2>
           <p class="text-sm">Empowering students with insights and predictions</p>
         </div>
     
+        <hr class="w-full my-4 md:hidden">
+
         <!-- Developer Info -->
         <div class="flex flex-col md:flex-row items-center md:space-x-8">
           <div>
@@ -332,6 +334,8 @@
             </ul>
           </div>
         </div>
+        
+        <hr class="w-full my-4 md:hidden">
     
         <!-- Copyright -->
         <div class="mt-4 md:mt-0">
