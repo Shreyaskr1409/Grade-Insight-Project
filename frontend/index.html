@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Insight</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./assets/tailwind.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="flex flex-col justify-center items-center">
+    <div class="w-1/2 flex flex-col justify-center items-center">
+        <h1 class="text-[150px] font-bold underline text-center text-nowrap">Grade Insight</h1>
+        <p class="text-xl text-center font-mono bg-zinc-200 px-1 rounded-md">get insights on which points to focus on in order to perform great in your exams...</p>
+
+        <span class="w-2 h-12"></span>
+
+        <hr class="w-full my-4"/>
+        <p class="text-justify"><span class="font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit?</span> Sapiente fugit dolorum ratione. Laudantium saepe laboriosam vel mollitia facere? Laudantium iste sequi, blanditiis quod quam beatae aut commodi non atque cum!
+        Blanditiis eaque odit error nam, dolore, debitis hic dicta reprehenderit nobis nisi, quod et soluta iure? Nostrum voluptates, officia aliquid voluptas excepturi in suscipit similique! Voluptas numquam quasi minus! Error.
+        Maxime explicabo ab animi, voluptatem expedita ut repellat culpa nostrum magnam nesciunt sit ipsa reprehenderit porro cum similique cupiditate totam molestiae natus distinctio aperiam officiis! Velit a consequatur obcaecati sequi.
+        Maxime dolorem perferendis, rem explicabo obcaecati provident, nostrum laboriosam beatae omnis eius soluta nulla eum aliquid fugit labore aliquam culpa, minima deleniti impedit exercitationem. Sapiente quo assumenda praesentium corporis quas.
+        Id itaque, et reprehenderit alias deserunt quia laboriosam blanditiis aperiam eos labore! Quaerat totam nesciunt est illum repellat reiciendis minus aut eius, iste dolorum eveniet iusto doloremque, consequuntur adipisci in.</p>
+        <hr class="w-full my-4"/>
+
+        <span class="w-2 h-12"></span>
+
+        <h1 class="text-[50px] font-semibold text-center text-nowrap">Fill the form to get results</h1>
+
+        <form id="predictionForm" action="#" method="post">
+            <div class="mt-10 grid grid-cols-2 gap-x-3 gap-y-4">
+
+                <div class="">
+                    <label for="Hours_Studied" class="block text-sm/6 font-medium">Hours studied</label>
+                    <div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                        <div class="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">per day :</div>
+                        <input type="number" name="Hours_Studied" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="">
+                    <label for="Sleep_Hours" class="block text-sm/6 font-medium">Sleep hours</label>
+                    <div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                        <div class="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">per day :</div>
+                        <input type="number" name="Sleep_Hours" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6">
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="">
+                    <label for="Physical_Activity" class="block text-sm/6 font-medium">Physical activities hours</label>
+                    <div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                        <div class="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">per day :</div>
+                        <input type="number" name="Physical_Activity" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Tutoring_Sessions" class="block text-sm/6 font-medium">Tutoring sessions</label>
+                    <div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                        <div class="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">this semester : </div>
+                        <input type="number" name="Tutoring_Sessions" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6">
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                <div class="">
+                    <label for="Previous_Scores" class="block text-sm/6 font-medium">Previous exam score</label>
+                    <div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                        <div class="shrink-0 select-none text-base text-gray-500 sm:text-sm/6">out of 100 : </div>
+                        <input type="number" name="Previous_Scores" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Attendance" class="block text-sm/6 font-medium">Attendance</label>
+                    <div>
+                        <div class="flex items-center rounded-md bg-white pl-3 outline outline-1 -outline-offset-1 outline-gray-300 focus-within:outline-2 focus-within:-outline-offset-2 focus-within:outline-indigo-600">
+                        <input type="number" name="Attendance" class="block min-w-0 grow py-1.5 pl-1 pr-3 text-base text-gray-900 placeholder:text-gray-400 focus:outline focus:outline-0 sm:text-sm/6">
+                        <div class="px-3 shrink-0 select-none text-base text-gray-500 sm:text-sm/6">%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Parental_Involvement" class="block text-sm/6 font-medium text-gray-900">Parental Involvement</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Parental_Involvement" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Access_to_Resources" class="block text-sm/6 font-medium text-gray-900">Access to resources</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Access_to_Resources" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                
+                <div class="">
+                    <label for="Motivation_Level" class="block text-sm/6 font-medium text-gray-900">Motivation level</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Motivation_Level" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <label for="Family_Income" class="block text-sm/6 font-medium text-gray-900">Family income</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Family_Income" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+                
+                <div class="">
+                    <label for="Teacher_Quality" class="block text-sm/6 font-medium text-gray-900">Teacher quality</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Teacher_Quality" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Low</option>
+                        <option value="2">Medium</option>
+                        <option value="3">High</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Extracurricular_Activities" class="block text-sm/6 font-medium text-gray-900">Extracurricular Activities</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Extracurricular_Activities" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Internet_Access" class="block text-sm/6 font-medium text-gray-900">Internet access</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Internet_Access" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Learning_Disabilities" class="block text-sm/6 font-medium text-gray-900">Learning disabilities</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Learning_Disabilities" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Yes</option>
+                        <option value="0">No</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="School_Type" class="block text-sm/6 font-medium text-gray-900">School type</label>
+                    <div class="grid grid-cols-1">
+                      <select name="School_Type" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Public</option>
+                        <option value="2">Private</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Peer_Influence" class="block text-sm/6 font-medium text-gray-900">Peer influence</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Peer_Influence" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Positive</option>
+                        <option value="2">Neutral</option>
+                        <option value="3">Negative</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Parental_Education_Level" class="block text-sm/6 font-medium text-gray-900">Parental education level</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Parental_Education_Level" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">High school</option>
+                        <option value="2">College</option>
+                        <option value="3">Postgraduate</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Distance_from_Home" class="block text-sm/6 font-medium text-gray-900">Distance from home</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Distance_from_Home" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Near</option>
+                        <option value="2">Moderate</option>
+                        <option value="3">Far</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+                <div class="">
+                    <label for="Gender" class="block text-sm/6 font-medium text-gray-900">Gender</label>
+                    <div class="grid grid-cols-1">
+                      <select name="Gender" autocomplete="country-name" class="col-start-1 row-start-1 w-full appearance-none rounded-md bg-white py-1.5 pl-3 pr-8 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                      <svg class="pointer-events-none col-start-1 row-start-1 mr-2 size-5 self-center justify-self-end text-gray-500 sm:size-4" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon">
+                        <path fill-rule="evenodd" d="M4.22 6.22a.75.75 0 0 1 1.06 0L8 8.94l2.72-2.72a.75.75 0 1 1 1.06 1.06l-3.25 3.25a.75.75 0 0 1-1.06 0L4.22 7.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                      </svg>
+                    </div>
+                </div>
+
+
+                <div class="col-span-2 text-center mt-4">
+                    <button type="submit" class="px-4 py-2 bg-indigo-600 text-white rounded-md">
+                        Submit
+                    </button>
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+    <div id="result" class="mt-4 p-4 w-full text-center"></div>
+    <div class="w-full mt-10 h-[300px] bg-zinc-400"></div>
+
+    <script>
+        document.getElementById("predictionForm").addEventListener("submit", async function (event) {
+          event.preventDefault(); // Prevent form submission
+      
+          const formData = new FormData(event.target);
+          const data = Object.fromEntries(formData.entries());
+      
+          // Step 1: Fetch from the API
+          try {
+            const response = await fetch("http://127.0.0.1:5000/predict", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(data),
+            });
+      
+            if (!response.ok) {
+              const error = await response.json();
+              document.getElementById("result").innerText = `Error: ${error.error}`;
+              return;
+            }
+      
+            const result = await response.json();
+            const { predicted_score, coefficients } = result;
+      
+            // Display the original prediction
+            document.getElementById("result").innerHTML = `
+              Predicted Score: ${predicted_score}
+              <br>Analyzing fields for improvement...
+            `;
+      
+            // Step 2: Find two most impactful fields
+            const sortedCoeffs = Object.entries(coefficients).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]));
+            const topTwoFields = sortedCoeffs.slice(0, 2).map(([field]) => field);
+      
+            // Generate "better" data: slightly increase values for these fields
+            const improvedData = { ...data };
+            topTwoFields.forEach((field) => {
+              improvedData[field] = (parseFloat(improvedData[field]) + 1).toString(); // Increment the value by 1
+            });
+      
+            // Step 3: Fetch prediction with improved data
+            const improvedResponse = await fetch("http://127.0.0.1:5000/predict", {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(improvedData),
+            });
+      
+            if (!improvedResponse.ok) {
+              const error = await improvedResponse.json();
+              document.getElementById("result").innerText = `Error with improved data: ${error.error}`;
+              return;
+            }
+      
+            const improvedResult = await improvedResponse.json();
+            const improvedScore = improvedResult.predicted_score;
+      
+            // Calculate improvement percentage
+            const improvementPercentage = (((improvedScore - predicted_score) / predicted_score) * 100).toFixed(2);
+      
+            // Display the improvement message
+            document.getElementById("result").innerHTML = `
+              Predicted Score: ${predicted_score}
+              <br>With improvements in fields: ${topTwoFields.join(", ")}
+              <br>New Predicted Score: ${improvedScore} (${improvementPercentage}% improvement)
+              <br>If you focus on these fields, your performance can improve significantly!
+            `;
+          } catch (error) {
+            console.error("Error:", error);
+            document.getElementById("result").innerText = "An error occurred while processing your request.";
+          }
+        });
+      </script>      
+</body>
+</html>

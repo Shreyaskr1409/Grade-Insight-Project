@@ -7,9 +7,8 @@
 To predict **CG (Cumulative Grade)** based on the 20 identified factors, we followed a systematic approach to train our machine learning model. The process involved:
 
 1. **Preparing the data**
-2. **Selecting the best features**
-3. **Training the model**
-4. **Evaluating its performance**
+2. **Training the model**
+3. **Evaluating its performance**
 
 ---
 
@@ -18,7 +17,7 @@ To predict **CG (Cumulative Grade)** based on the 20 identified factors, we foll
 The first step was to prepare the data so the model could understand it:
 
 - **Handling Missing Data**:
-    - Filled missing numerical values (e.g., study hours) with averages.
+    - Filled missing numerical values (e.g., study hours) with some data.
     - Used the most common value for categorical data (e.g., branch or school type).
 
 - **Scaling the Data**:
@@ -28,27 +27,6 @@ The first step was to prepare the data so the model could understand it:
     - Divided the dataset into (Planned):
         - **70% Training Set**
         - **30% Testing Set**
-
----
-
-## Feature Selection
-
-Not all 20 factors contributed equally to CG prediction. We identified and focused on the most impactful ones:
-
-### Key Features
-- **Study hours**
-- **Attendance**
-- **Motivation**
-- **Previous scores**
-- **Family income**
-
-### Behavioral and Categorical Factors
-- Extracurricular activities
-- Peer influence
-- Interest in the subject
-
-### Transforming Data
-Categorical data (e.g., school type, branch) was converted into numerical form using **encoding**.
 
 ---
 
