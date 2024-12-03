@@ -6,7 +6,7 @@ import numpy as np
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load("../linear_regression_model.pkl")
+model = joblib.load("./../linear_regression_model.pkl")
 
 feature_names = [
     "Hours_Studied", "Attendance", "Parental_Involvement", "Access_to_Resources",
