@@ -381,7 +381,7 @@
             });
       
             // Step 3: Fetch prediction with improved data
-            const improvedResponse = await fetch("http://127.0.0.1:5000/predict", {
+            const improvedResponse = await fetch("https://grade-insight-project.onrender.com/predict", {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -410,7 +410,7 @@
             `;
           } catch (error) {
             console.error("Error:", error);
-            document.getElementById("result").innerText = "An error occurred while processing your request.";
+            document.getElementById("result").innerText = document.getElementById("result").innerText + "An error occurred while processing your request.";
           }
         });
       </script>      
