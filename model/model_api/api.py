@@ -5,7 +5,7 @@ import numpy as np
 import os
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins=["https://grade-insight.onrender.com"], supports_credentials=True)
 
 model_path = os.path.join(os.path.dirname(__file__), '../linear_regression_model.pkl')
 model = joblib.load(model_path)
