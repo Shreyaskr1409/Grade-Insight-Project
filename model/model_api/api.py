@@ -48,4 +48,6 @@ def predict():
         return jsonify({"error": "An internal error occurred. Please try again later."}), 500
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    # Set the host to 0.0.0.0 and the port to the value from the environment (Render will set it)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True)
