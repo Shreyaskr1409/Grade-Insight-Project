@@ -2,11 +2,13 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
 import numpy as np
+import os
 
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load("./../linear_regression_model.pkl")
+model_path = os.path.join(os.path.dirname(__file__), '../linear_regression_model.pkl')
+model = joblib.load(model_path)
 
 feature_names = [
     "Hours_Studied", "Attendance", "Parental_Involvement", "Access_to_Resources",
